@@ -1,0 +1,163 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-general: #0c0832;
+    --bg-secundary: #19153d;
+    --blueDarkGeneral: rgb(2, 2, 51);
+    --colorIconMenu: white;
+    --hoverAndText: aqua;
+    --textGeneral: rgb(2, 2, 51);
+    --whiteGeneral: white;
+}
+
+.containFather {
+    position: fixed;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blueDarkGeneral);
+    z-index: 999;
+}
+
+.fatherAvatarHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatarHeader {
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--whiteGeneral);
+    border: 2px solid var(--hoverAndText);
+}
+
+.textAvatarHeader {
+    color: var(--whiteGeneral);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navList li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: var(--textNav);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navList li:hover a {
+    color: var(--hoverAndText);
+}
+
+.navList li .underline-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: aqua;
+    transition: width 0.3s ease;
+}
+
+.navList li:hover .underline-text::before {
+    width: 100%;
+}
+
+.openMenu,
+.closeMenu {
+    display: none;
+}
+
+.containH1Avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+
+    .openMenu,
+    .closeMenu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        color: var(--colorIconMenu);
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .closeMenu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav {
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--blueDarkGeneral);
+        padding: 2rem;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .nav::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(../img/prueba.webp) no-repeat bottom 0 right 0 / 200px;
+        transform: scaleX(-1);
+        z-index: -1;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 2rem;
+    }
+
+    .underline-text {
+        display: block;
+    }
+}

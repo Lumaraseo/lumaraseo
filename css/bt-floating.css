@@ -1,0 +1,122 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-general:#0c0832;
+    --bg-secundary:#19153d;
+    --blueDarkGeneral: rgb(2, 2, 51);
+    --colorIconMenu: white;
+    --hoverAndText: aqua;
+    --textGeneral: rgb(2, 2, 51);
+    --whiteGeneral: white;
+}
+
+.iconsBTGlinke,
+.iconsBTGwha,
+.iconsBTG {
+    font-size: 34px;
+}
+
+.iconsBTGlinke {
+    color: #0057b5;
+}
+.iconsBTG{
+    color: black;
+}
+
+.iconsBTGwha {
+    color: var(--whiteGeneral);
+}
+.redes .whatsapp-link {
+    background-color: #4CAF50; 
+}
+#btn-mas {
+    display: none;
+}
+
+.containerBtnFixed {
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a,
+.icon-mas2 {
+    display: block;
+    text-decoration: none;
+    background-color: var(--whiteGeneral);
+    color: var(--whiteGeneral);
+    width: 60px;
+    height: 60px;
+    line-height: 62px;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+
+.icon-mas2 {
+    line-height: 57px;
+    border: 2px solid var(--hoverAndText);
+    background-color: var(--blueDarkGeneral);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.redes a:hover {
+    background-color: var(--hoverAndText);
+    color: var(--textBlueBold);
+}
+
+.redes a {
+    margin: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~.redes a {
+    margin-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#btn-mas:checked~.btn-mas .icon-mas2 {
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .redes a,
+    .icon-mas2 {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+    }
+
+    .iconsBTG {
+        font-size: 30px;
+    }
+
+    .icon-mas2 {
+        font-size: 20px;
+    }
+
+    #btn-mas:checked~.btn-mas .icon-mas2 {
+        transform: rotate(90deg);
+        font-size: 40px;
+    }
+}
