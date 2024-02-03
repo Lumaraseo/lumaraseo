@@ -9,3 +9,11 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
     nav.classList.remove("visible");
 });
+
+/* GA4 */
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-329J6BK6HG');

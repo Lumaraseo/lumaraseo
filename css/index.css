@@ -1,16 +1,88 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
 :root {
-    --bg-general:#0c0832;
-    --bg-secundary:#19153d;
-    --blueDarkGeneral: rgb(2, 2, 51);
+    --bg-general: #0c0832;
+    --bg-secundary: #19153d;
+    --titleSmall: #7844e4;
     --colorIconMenu: white;
     --hoverAndText: aqua;
-    --textGeneral: rgb(2, 2, 51);
     --whiteGeneral: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+    color: var(--whiteGeneral);
+}
+
+.textH1Index {
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+
+}
+
+.titleH1Index {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 30px 40px;
+}
+
+.containimgOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textImgOne {
+    text-align: center;
+    letter-spacing: 1px;
+}
+.sectionCardServices{
+    margin-top: 50px;
+    padding: 40px;
+}
+
+.containCardServices{border-radius: 1rem;
+    padding: 20px;
+    background-color: var(--bg-secundary);
+}
+.titleSmallServices{
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+    
+}
+.tittleH2Services{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2.4rem;
+}
+.textH2services{
+    padding: 15px 0;
+    font-size: 14px;
+    color: rgb(209, 209, 209);
+    line-height: 1.7em;
+    font-weight: 500;
 }
