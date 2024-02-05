@@ -51,14 +51,13 @@ main {
   align-items: center;
 }
 
-.textImgOne{
-    text-align: center;
-    color: var(--whiteGeneral);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.4rem;
+.textImgOne {
+  text-align: center;
+  color: var(--whiteGeneral);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.4rem;
 }
-
 
 .containServices {
   margin: 50px 20px 10px;
@@ -99,4 +98,91 @@ main {
   background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
   background-color: var(--bg-secundary);
   border-radius: 1rem;
+}
+
+.containSectionBenefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 5px;
+}
+
+.tab {
+  display: flex;
+  gap: 10px;
+  padding: 20px 26px;
+  color: #867c7e;
+  background-color: var(--bg-secundary);
+  border-radius: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+}
+
+.tab:hover,
+.tab.active {
+  color: var(--titleSmall);
+  background-color: aliceblue;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-content {
+  max-width: 90%;
+  padding: 30px;
+  display: none;
+  color: var(--whiteGeneral);
+  background-color: var(--bg-secundary);
+  transition: display 0.5s ease;
+  border-radius: 0.5rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.containSectionBenefit,
+.containCardBenefit,
+.containSectionBenefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containSectionBenefit {
+  padding: 40px 0;
+}
+
+.containCardBenefit {
+  margin: 45px 0;
+}
+
+.titleBene {
+  text-align: center;
+}
+.titleH3Benefit {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2.4rem;
+}
+.textH3Benefit {
+  padding: 15px 0;
+  font-size: 14px;
+  color: rgb(205 205 205 / 60%);
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+.iconBenefi {
+  color: var(--titleSmall);
+  font-size: 45px;
+  padding: 10px 0;
+}
+
+.tabCardBenefi {
+  margin: 30px 0;
 }
