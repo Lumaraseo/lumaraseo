@@ -50,6 +50,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+.imgOne{
+  width: 380px;
+}
 
 .textImgOne {
   text-align: center;
