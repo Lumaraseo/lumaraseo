@@ -121,16 +121,17 @@ main {
   padding: 20px 26px;
   color: #867c7e;
   background-color: var(--bg-secundary);
+  border: 1px solid aliceblue;
   border-radius: 0.5rem 0.5rem 0 0;
   cursor: pointer;
 }
-
 .tab:hover,
 .tab.active {
   color: var(--titleSmall);
   background-color: aliceblue;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .tab-content {
   max-width: 90%;
@@ -140,6 +141,7 @@ main {
   background-color: var(--bg-secundary);
   transition: display 0.5s ease;
   border-radius: 0.5rem;
+  border: 1px solid aliceblue;
 }
 
 .tab-content.active {
