@@ -8,24 +8,30 @@
 :root {
     --bg-general:#0c0832;
     --bg-secundary:#19153d;
-    --blueDarkGeneral: rgb(2, 2, 51);
+    --titleSmall: #7844e4;
     --colorIconMenu: white;
     --hoverAndText: aqua;
-    --textGeneral: rgb(2, 2, 51);
     --whiteGeneral: white;
 }
 
 .iconsBTGlinke,
 .iconsBTGwha,
-.iconsBTG {
+.iconsBTGTikTok,
+.iconsBTGInsta{
     font-size: 34px;
+}
+
+.iconsBTGTikTok{
+    color: black;
+}
+.iconsBTGInsta{
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50, #0057B5);
+    background-clip: text;
+    color: transparent; 
 }
 
 .iconsBTGlinke {
     color: #0057b5;
-}
-.iconsBTG{
-    color: black;
 }
 
 .iconsBTGwha {
@@ -69,14 +75,13 @@
 
 .icon-mas2 {
     line-height: 57px;
-    border: 2px solid var(--hoverAndText);
-    background-color: var(--blueDarkGeneral);
+    background-color: var(--titleSmall);
     cursor: pointer;
     font-size: 20px;
 }
 
 .redes a:hover {
-    background-color: var(--hoverAndText);
+    background-color: var(--titleSmall);
     color: var(--textBlueBold);
 }
 
@@ -105,10 +110,6 @@
         width: 65px;
         height: 65px;
         line-height: 65px;
-    }
-
-    .iconsBTG {
-        font-size: 30px;
     }
 
     .icon-mas2 {
