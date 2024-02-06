@@ -49,7 +49,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-.imgOne{
+
+.imgOne {
   width: 380px;
 }
 
@@ -68,17 +69,19 @@ main {
   border-radius: 1rem;
 }
 
-.btn-white{
-  padding: 1rem 2.5rem;
+.btn-white,
+.btn-purple {
+  padding: 1.5rem 1.5rem;
   color: var(--titleSmall);
   border-style: none;
   border-radius: 3px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 20px 0 25px;
   cursor: pointer;
 }
-.btn-white:hover{
+
+.btn-white:hover {
   color: white;
   background-color: var(--titleSmall);
   transition: background-color 0.3s ease;
@@ -108,25 +111,19 @@ main {
   line-height: 1.7em;
   font-weight: 500;
 }
-.learMoreServi{
+
+.learMoreServi {
   font-size: 15px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
 }
 
 .containCardServices {
-  margin: 50px 20px 10px;
+  margin: 50px 20px 50px;
   padding: 40px;
   background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
   background-color: var(--bg-secundary);
   border-radius: 1rem;
-}
-
-.containSectionBenefit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .tabs {
@@ -144,13 +141,13 @@ main {
   border-radius: 0.5rem 0.5rem 0 0;
   cursor: pointer;
 }
+
 .tab:hover,
 .tab.active {
   color: var(--titleSmall);
   background-color: aliceblue;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 .tab-content {
   max-width: 90%;
@@ -168,8 +165,7 @@ main {
 }
 
 .containSectionBenefit,
-.containCardBenefit,
-.containSectionBenefit {
+.containCardBenefit {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +173,7 @@ main {
 }
 
 .containSectionBenefit {
-  padding: 40px 0;
+  padding: 40px 0 100px;
 }
 
 .containCardBenefit {
@@ -187,12 +183,14 @@ main {
 .titleBene {
   text-align: center;
 }
+
 .titleH3Benefit {
   padding: 10px 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 2.4rem;
 }
+
 .textH3Benefit {
   padding: 15px 0;
   font-size: 14px;
@@ -211,7 +209,11 @@ main {
   margin: 30px 0;
 }
 
-.titleSlider{
+.sectionSliderInfinity {
+  padding-bottom: 60px;
+}
+
+.titleSlider {
   text-align: center;
   padding-bottom: 56px;
   font-size: 14px;
@@ -225,11 +227,12 @@ main {
   margin: auto;
   overflow: hidden;
 }
-.imgSlider{
+
+.imgSlider {
+  height: auto;
   width: 20%;
-  aspect-ratio: 3/2;
   object-fit: contain;
-  mix-blend-mode:  color-burn;
+  mix-blend-mode: color-burn;
 }
 
 .slider .slide-track {
@@ -248,15 +251,34 @@ main {
 
 .slider .slide img {
   width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 @keyframes scroll {
   0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-      -webkit-transform: translateX(calc(-200px * 4));
-      transform: translateX(calc(-200px * 4));
+    -webkit-transform: translateX(calc(-200px * 4));
+    transform: translateX(calc(-200px * 4));
   }
+}
+
+.containButtonCall {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-purple {
+  color: var(--whiteGeneral);
+  background-color: var(--titleSmall);
+}
+
+.btn-purple:hover {
+  color: var(--titleSmall);
+  background-color: var(--whiteGeneral);
 }

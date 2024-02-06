@@ -18,7 +18,7 @@
 
 .containFather {
     position: fixed;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 100%;
     padding: 1.5rem 2rem;
     display: flex;
@@ -64,7 +64,7 @@
 }
 
 .navList li:hover a {
-    color: var(--hoverAndText);
+    color: var(--titleSmall);
 }
 
 .navList li .underline-text::before {
@@ -74,7 +74,7 @@
     left: 0;
     width: 0;
     height: 3px;
-    background-color: aqua;
+    background-color: var(--titleSmall);
     transition: width 0.3s ease;
 }
 
