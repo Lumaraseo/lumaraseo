@@ -30,7 +30,7 @@ body {
   background-color: var(--blueDarkGeneral);
 }
 
-.containAvatarFooter {
+.containLogoFooter {
   padding-top: 60px;
 }
 
@@ -40,8 +40,8 @@ body {
   justify-content: space-between;
 }
 
-.iconAvatarFooter {
-  height: 23px;
+.iconLogoFooter {
+  height: 30px;
   width: auto;
 }
 
