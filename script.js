@@ -1,3 +1,6 @@
+
+/* header Nav */
+
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
@@ -10,7 +13,7 @@ close.addEventListener("click", () => {
   nav.classList.remove("visible");
 });
 
-/* GA4 */
+/* Google Analitycs */
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {
@@ -20,7 +23,7 @@ gtag("js", new Date());
 
 gtag("config", "G-329J6BK6HG");
 
- 
+
 /* Advanced Tabs module */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -49,6 +52,3 @@ function openTab(tabName, clickedTab) {
   // Muestra el contenido de la pestaña seleccionada
   document.getElementById(tabName).classList.add("active");
 }
-
-
-
