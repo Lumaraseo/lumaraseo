@@ -1,0 +1,93 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-general: #0c0832;
+    --bg-secundary: #19153d;
+    --titleSmall: #7844e4;
+    --hoverAndText: aqua;
+    --whiteGeneral: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+    color: var(--whiteGeneral);
+}
+.sectionAllServices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    gap: 20px; 
+}
+
+.titleSmall{
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+}
+
+.titleH1Services {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 30px 40px;
+}
+
+.containCardPro {
+    max-width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--bg-secundary);
+    border-radius: 0.8rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.containImg {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.imgPro {
+    height: auto;
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    cursor: pointer;
+}
+
+.containInfo {  
+    width: 100%;
+    padding: 20px;
+}
+
+.titleH2Info {
+    font-size: 20px;
+    padding-bottom: 14px;
+    color: var(--whiteGeneral);
+    font-weight: 600;
+}
+
+.textH2Info {
+    color: #867c7e;
+    font-weight: 300;
+}

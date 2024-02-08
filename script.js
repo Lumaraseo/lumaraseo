@@ -1,5 +1,5 @@
 
-/* header Nav */
+/* Header Nav */
 
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#open");
