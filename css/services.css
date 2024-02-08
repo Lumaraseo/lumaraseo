@@ -26,15 +26,21 @@ main {
     padding-top: 40%;
     color: var(--whiteGeneral);
 }
-.sectionAllServices{
+
+.sectionSEO,
+.sectionFrontEnd {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
-    gap: 20px; 
+    align-items: center;
+    gap: 20px;
 }
 
-.titleSmall{
+.sectionFrontEnd {
+    margin-top: 40px;
+}
+
+.titleSmall {
     padding-bottom: 10px;
     text-align: center;
     font-weight: 600;
@@ -75,19 +81,35 @@ main {
     cursor: pointer;
 }
 
-.containInfo {  
+.containInfo {
     width: 100%;
     padding: 20px;
 }
 
-.titleH2Info {
+.titleH2Info,
+.titleH2Ser {
     font-size: 20px;
     padding-bottom: 14px;
     color: var(--whiteGeneral);
     font-weight: 600;
 }
 
+.containH2Ser{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.titleH2Ser {
+    color: var(--whiteGeneral);
+    font-size: 35px;
+    text-shadow: 2px 2px 3px var(--titleSmall);
+}
+
 .textH2Info {
     color: #867c7e;
     font-weight: 300;
+    line-height: 1.6;
 }
