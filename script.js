@@ -52,3 +52,8 @@ function openTab(tabName, clickedTab) {
   // Muestra el contenido de la pestaña seleccionada
   document.getElementById(tabName).classList.add("active");
 }
+
+
+
+
+

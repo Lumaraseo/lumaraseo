@@ -48,12 +48,16 @@ main {
     color: var(--titleSmall);
 }
 
-.titleH1Services {
+.titleH1Services{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     line-height: 1.3em;
     padding: 0 30px 40px;
+}
+.textH2Info{
+    line-height: 1.3;
+    color: #ababab;
 }
 
 .containCardPro {
@@ -88,28 +92,78 @@ main {
 
 .titleH2Info,
 .titleH2Ser {
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 14px;
     color: var(--whiteGeneral);
     font-weight: 600;
 }
 
-.containH2Ser{
-    width: 78%;
+.containH2Plan{
+    padding: 100px 0 40px;
+}
+.sectionPlan{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
 }
 
-.titleH2Ser {
-    color: var(--whiteGeneral);
+.titlePlan{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 18px 0;
+}
+
+
+.containInfoPlan{
+    background-color: var(--bg-secundary);
+    padding: 30px;
+    border-radius: 0.8rem;
+}
+
+
+.textH2Plan{
+    line-height: 1.3;
+    color: #ababab;
+    padding: 10px 0 20px;
+}
+
+.iconCheckPlan{
+    font-size: 30px;
+    color: var(--titleSmall);
+}
+.containUlPlan{
+    padding: 0 0 20px;
+}
+.containUlPlan li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pricePlan{
     font-size: 35px;
-    text-shadow: 2px 2px 3px var(--titleSmall);
+    font-weight: 700;
+    color:   var(--whiteGeneral);
+}
+.textPrince{
+    display: flex;
+    color: grey;
+    align-items: center;
+    padding: 0 0 20px;
+}
+.btn-ChoosePlan{
+height: 3rem;
+width: 100%;
+border: none;
+border-radius: 0.3rem;
+background-color: var(--titleSmall);
+color: var(--whiteGeneral);
+font-weight: 600;
 }
 
-.textH2Info {
-    color: #867c7e;
-    font-weight: 300;
-    line-height: 1.6;
-}
+
+
+
