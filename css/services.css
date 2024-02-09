@@ -164,6 +164,50 @@ color: var(--whiteGeneral);
 font-weight: 600;
 }
 
+.accordion{
+    width: 385px;
+}
+
+.accordion-item{
+    margin: 10px 0;
+    border-radius: 1rem;
+    background-color: var(--titleSmall);
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1),-2px -2px 8px rgba(0,0,0,0.1);
+}
+
+.accordion-body{
+    line-height: 1.5;
+    background-color: var(--titleSmall);
+    font-size: 15px;
+    color: var(--whiteGeneral);
+}
+
+.accordion-button{
+    background: var(--bg-secundary);
+    color: var(--whiteGeneral);
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.accordion-button:not(.collapsed){
+    background: rgba(0,0,0,0.1);
+    color: var(--whiteGeneral);
+    box-shadow: none;
+}
+
+.accordion-button.collapsed::after {
+    color: white !important;
+}
+
+
 
 
 
