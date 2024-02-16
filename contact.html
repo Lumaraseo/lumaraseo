@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumaraSeo</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bt-floating.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+    <div class="containerBtnFixed">
+        <input type="checkbox" id="btn-mas" />
+        <div class="redes">
+            <a href="#" class="icon" target="_blank"><i class="iconsBTGTikTok bi-tiktok"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="iconsBTGInsta bi-instagram"></i>
+                <a href="#" class="icon" target="_blank"><i class="iconsBTGlinke bi-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=57304&text=¡Hola! Quisiera ponerme en contacto contigo."
+                    class="icon whatsapp-link" target="_blank"><i class="iconsBTGwha bi-whatsapp"></i>
+                </a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas"><i class="icon-mas2 bi-plus-lg"></i></label>
+        </div>
+    </div>
+
+    <header class="containFather">
+        <div class="fatherLogoHeader">
+            <img class="logoHeader" src="./img/logowebPrueba.png" alt="logoHeader" />
+        </div>
+        <button class="openMenu" id="open"><i class="iconBurger bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="closeMenu" id="close"><i class="iconX bi-x"></i></button>
+            <ul class="navList">
+                <li><a class="underline-text" href="index.html">HOME</a></li>
+                <li><a class="underline-text" href="services.html">SERVICES</a></li>
+                <li><a class="underline-text" href="blog.html">BLOG</a></li>
+                <li><a class="underline-text" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <form class="row g-3 m-3 needs-validation" id="contact-form" novalidate>
+            <div class="col-6">
+                <label for="name" class="form-label"></label>
+                <input type="text" class="form-control" name="name" placeholder="First Name" required
+                    autocomplete="given-name">
+                <div class="valid-feedback">Valid Name</div>
+                <div class="invalid-feedback">Invalid name</div>
+            </div>
+
+            <div class="col-6">
+                <label for="lastname" class="form-label"></label>
+                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required
+                    autocomplete="family-name">
+                <div class="valid-feedback">Valid Last Name</div>
+                <div class="invalid-feedback">Invalid Last Name</div>
+            </div>
+
+            <div class="col-6">
+                <label for="hasWebsite" class="form-label"></label>
+                <select class="form-select" id="hasWebsite" name="hasWebsite" required onchange="toggleWebsiteInput()">
+                    <option value="" selected disabled>Do you have a website?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+            </div>
+
+            <div class="col-6">
+                <label for="website" class="form-label"></label>
+                <input type="url" class="form-control" id="website" name="website" placeholder="https://example.com"
+                    disabled>
+                <div class="valid-feedback">Valid website</div>
+                <div class="invalid-feedback">Please enter a valid website. Example: https://example.com</div>
+            </div>
+
+            <div class="col-12">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" name="email" placeholder="Email" required autocomplete="email">
+                <div class="valid-feedback">Valid Email</div>
+                <div class="invalid-feedback">Invalid Email</div>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label"></label>
+                <textarea class="form-control" name="message" placeholder="Message" rows="6" required
+                    autocomplete="off"></textarea>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" name="checkterms" class="form-check-input" required>
+                    <label for="checkterms" class="form-check-label">I accept the terms and
+                        conditions</label>
+                    <div class="valid-feedback">Terms and conditions selected</div>
+                    <div class="invalid-feedback">You must select the terms and conditions</div>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <button type="Submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="col-3">
+                <button type="Reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </main>
+
+
+    <footer class="sectionFooter">
+        <div class="containLogoFooter">
+            <img class="iconLogoFooter" src="./img/logowebPrueba.png" alt="avatar" />
+        </div>
+        <div class="containIconFooter">
+            <a href="#" target="_blank" class="iconTikFooter">
+                <i class="bi-tiktok"></i>
+            </a>
+            <a href="#" target="_blank" class="iconInstaFooter">
+                <i class="bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/john-james-mosquera-rozo-4b22bb229/" target="_blank"
+                class="iconLinkFooter">
+                <i class="bi-linkedin"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=573042135572&text=¡Hola! Quisiera ponerme en contacto contigo."
+                class="iconWhatssapFooterr" target="_blank"><i class="bi-whatsapp"></i>
+            </a>
+        </div>
+        <ul class="ulFooter">
+            <li class="liFooter">
+                <a href="mailto:johnjamesmosquera3@gmail.com" class="iconEmailFooter">
+                    <i class="bi-envelope-fill"></i>
+                    admin@lumaraseo.com
+                </a>
+            </li>
+            <li class="liFooter">
+                <a href="tel:+573042135572" class="iconPhoneFooter">
+                    <i class="bi-telephone-fill"></i>
+                    +573046807443
+                </a>
+            </li>
+        </ul>
+        <div class="containListFooter">
+            <ul class="ulListFooter">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="copyRight">Copyright 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-329J6BK6HG"></script>
+
+</body>
+
+</html>
