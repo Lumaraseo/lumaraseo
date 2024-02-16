@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       if (form.checkValidity()) {
-        emailjs.sendForm("service_8qb5y4b", "template_13mp43c", this).then(
+        emailjs.sendForm("service_8qb5y4b","template_iiltbxb", this).then(
           function () {
             console.log("SUCCESS!");
             // Usar SweetAlert2 para el mensaje de éxito
