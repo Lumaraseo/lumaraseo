@@ -1,4 +1,4 @@
-# LumaraSeo
+# LumaraSeo ![Logo de LumaraSeo](https://github.com/Lumaraseo/lumaraseo/blob/main/img/logoweb.png?raw=true)
 
 ## Premier SEO Agency
 
