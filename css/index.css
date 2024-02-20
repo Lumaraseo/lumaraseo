@@ -283,3 +283,73 @@ main {
   color: var(--titleSmall);
   background-color: var(--whiteGeneral);
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 20%;
+  }
+
+  .titleH1Index {
+    padding: 0 72px 40px;
+    font-size: 40px;
+  }
+
+  .titleH3Benefit {
+    width: 87%;
+}
+
+  .imgOne {
+    width: 100%;
+  }
+
+  .containServices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgTwo {
+    width: 100%;
+  }
+
+  .cardServicces {
+    width: 60%;
+  }
+
+  .containCardServices {
+    background: url(../img/elementOne.svg) no-repeat bottom right / 50%;
+    background-color: var(--bg-secundary);
+  }
+
+  .textH2Card {
+    width: 600PX;
+  }
+
+  .iconBenefi{
+    font-size: 50px;
+  }
+
+  .tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .tabCardBenefi {
+    width: 48%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #8c8c8c;
+    border-radius: 1.5rem;
+    box-shadow: inset 0px 0px 8px 0px #ffffff;
+  }
+  .tab-content{
+    border: none;
+  }
+
+  .m-Tablet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

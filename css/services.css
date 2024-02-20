@@ -36,10 +36,6 @@ main {
     gap: 20px;
 }
 
-.sectionFrontEnd {
-    margin-top: 40px;
-}
-
 .titleSmall {
     padding-bottom: 10px;
     text-align: center;
@@ -245,7 +241,7 @@ main {
     line-height: 2.4rem;
 }
 
-.btn-purpleCall{
+.btn-purpleCall {
     height: 3.5rem;
     width: 8rem;
     color: var(--titleSmall);
@@ -260,4 +256,65 @@ main {
 .btn-purpleCall:hover {
     color: var(--whiteGeneral);
     background-color: var(--titleSmall);
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding-top: 20%;
+    }
+
+    .titleH1Services {
+        font-size: 45px;
+        padding: 0px 9% 40px;
+    }
+
+    .containCardPro {
+        max-width: 90%;
+        justify-self: center;
+    }
+
+    .sectionSEO,
+    .sectionFrontEnd {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .sectionSEO {
+        padding-bottom: 40px;
+    }
+
+    .imgPro {
+        height: 250px;
+    }
+
+    .containInfo {
+        height: 310px;
+    }
+
+    .title-m {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .sectionPlan {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .accordion {
+        width: 80%;
+    }
+
+    .sectionAccordion{
+        display: flex;
+        justify-content: center;
+    }
 }
