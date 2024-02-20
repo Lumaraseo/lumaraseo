@@ -23,6 +23,146 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40%;
+    padding-top: 35%;
     color: var(--whiteGeneral);
 }
+
+.titleH1Cont,
+.titleH2MoreInf {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 30px 40px;
+}
+
+.textH1Cont {
+    padding: 10px 22px;
+    text-align: center;
+    line-height: 1.4;
+    color: #ababab;
+}
+
+.titleSmallCont {
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+}
+
+.m-3 {
+    background-color: var(--bg-secundary);
+    border-radius: 1rem;
+    padding: 10px 10px 30px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textGeneral);
+    line-height: 40px;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding: 50px 7px;
+    gap: 15px;
+}
+
+.buttonContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 4.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 10px;
+    color: var(--titleSmall);
+    background-color: var(--whiteGeneral);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttonContact:hover {
+    color: var(--whiteGeneral);
+    background-color: var(--titleSmall);
+}
+
+.titleH2MoreInf {
+    padding: 40px 30px 0;
+}
+
+.sectionMoreInfo {
+    padding-top: 50px;
+}
+
+.contFatherInfo {
+    margin: 30px;
+}
+
+.containFlex {
+    display: flex;
+}
+
+.contaIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContact {
+    border-radius: 0.5rem;
+    font-size: 30px;
+    background-color: var(--bg-secundary);
+    color: var(--titleSmall);
+}
+
+.iconContact,
+.contaText {
+    padding: 20px;
+}
+
+.titleInfo {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.textInfo {
+    color: #ababab;
+}
+
+.titleH1Cont {
+    padding: 0px 30px 0px;
+}
+
+.containCardCont {
+    margin: 50px 20px 50px;
+    padding: 40px 20px;
+    background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
+    background-color: var(--bg-secundary);
+    border-radius: 1rem;
+}
+
+.title-smCall {
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+}
+
+.textEnd{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 2.4rem;
+}
+
+
