@@ -29,6 +29,7 @@
             rgba(120, 68, 228, 1) 0%,
             rgba(25, 21, 61, 1) 100%);
     z-index: 999;
+    max-width: 1440px;
 }
 
 .fatherLogoHeader {

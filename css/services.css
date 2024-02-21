@@ -339,14 +339,47 @@ main {
     .containInfo {
         height: 292px;
     }
+
     .sectionPlan {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin: 1%;
     }
 
-    .containCardCall{
+    .containCardCall {
         margin: 50px 110px 50px;
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        padding-top: 10%;
+    }
+    .titleH1Services {
+        padding: 0px 21% 40px;
+    }
+
+    .sectionBody {
+        max-width: 1440px;
+    }
+
+    .sectionSEO,
+    .sectionFrontEnd {
+        margin: 1% 10%;
+    }
+    .containInfo {
+        height: 248px;
+    }
+
+    .containCardCall {
+        gap: 20px;
     }
 }

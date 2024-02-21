@@ -231,7 +231,7 @@ main {
 
 .imgSlider {
   height: auto;
-  width: 20%;
+  width: 30%;
   object-fit: contain;
   mix-blend-mode: color-burn;
 }
@@ -369,5 +369,82 @@ main {
     font-size: 45px;
     padding: 0 12% 0;
     line-height: 3rem;
+  }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    padding-top: 10%;
+  }
+
+  .sectionBody {
+    max-width: 1440px;
+  }
+
+  .sectionServices {
+    margin: 0 5%;
+  }
+
+  .imgTwo {
+    width: 460px;
+  }
+
+  .containServices {
+    gap: 50px;
+
+  }
+
+  .containCardServices {
+    width: 33%;
+    background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
+    background-color: var(--bg-secundary);
+  }
+
+  .sectionCards {
+    max-width: 1440px;
+    display: flex;
+  }
+
+  .textH2Card {
+    width: 300px;
+  }
+
+  .cardServicces {
+    width: 100%;
+  }
+
+  .textH2Card {
+    width: 100%;
+  }
+
+  .containAux {
+    margin: 50px 5% 10px;
+    width: 90%;
+    gap: 50px;
+  }
+
+  .tabCardBenefi {
+    width: 32%;
+  }
+
+  .m-Tablet {
+    width: 100%;
+  }
+  .slider {
+    width: 60vw;
+  }
+
+  .slider .slide-track {
+    gap: 88px;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(260px * 10);
+  }
 }
