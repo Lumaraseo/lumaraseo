@@ -313,8 +313,40 @@ main {
         width: 80%;
     }
 
-    .sectionAccordion{
+    .sectionAccordion {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .titleH1Services {
+        padding: 0px 16% 40px;
+    }
+
+    .sectionSEO,
+    .sectionFrontEnd {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 1%;
+    }
+
+    .containCardPro {
+        max-width: 100%;
+    }
+
+    .containInfo {
+        height: 292px;
+    }
+    .sectionPlan {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 1%;
+    }
+
+    .containCardCall{
+        margin: 50px 110px 50px;
+        display: flex;
     }
 }

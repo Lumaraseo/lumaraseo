@@ -296,7 +296,7 @@ main {
 
   .titleH3Benefit {
     width: 87%;
-}
+  }
 
   .imgOne {
     width: 100%;
@@ -325,7 +325,7 @@ main {
     width: 600PX;
   }
 
-  .iconBenefi{
+  .iconBenefi {
     font-size: 50px;
   }
 
@@ -343,13 +343,31 @@ main {
     border-radius: 1.5rem;
     box-shadow: inset 0px 0px 8px 0px #ffffff;
   }
-  .tab-content{
+
+  .tab-content {
     border: none;
   }
 
-  .m-Tablet{
+  .m-Tablet {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .titleH1Index {
+    padding: 0 16% 0;
+    font-size: 45px;
+  }
+
+  .imgTwo {
+    width: 400px;
+  }
+
+  .titleBene {
+    font-size: 45px;
+    padding: 0 12% 0;
+    line-height: 3rem;
+}
 }
