@@ -53,6 +53,7 @@ main {
 }
 
 .textH2Info {
+    
     font-size: 16px;
     line-height: 1.5;
     color: #ababab;
@@ -60,6 +61,7 @@ main {
     padding: 5px;
     max-height: 150px;
     border-radius: 5px;
+    border: 0.1px solid #3c3c3c;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
