@@ -113,13 +113,43 @@ main {
   font-weight: 500;
 }
 
+.textH2Card li {
+  display: flex;
+  align-items: center;
+}
+
+.iconCheckHome {
+  font-size: 30px;
+  color: var(--titleSmall);
+  padding-right: 15px;
+}
+
+.btn-cardSer {
+  height: 3.5rem;
+  width: 80%;
+  color: var(--titleSmall);
+  border-style: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 25px;
+  cursor: pointer;
+}
+
+.btn-cardSer:hover {
+  color: white;
+  background-color: var(--titleSmall);
+  transition: background-color 0.3s ease;
+}
+
 .learMoreServi {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
 }
 
-.containCardServices {
+.containCardServices,
+.cnt-CardCall {
   margin: 50px 20px 50px;
   padding: 40px;
   background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
@@ -313,16 +343,21 @@ main {
   }
 
   .cardServicces {
-    width: 60%;
+    width: 100%;
   }
 
-  .containCardServices {
+  .containCardServices,
+  .cnt-CardCall {
     background: url(../img/elementOne.svg) no-repeat bottom right / 50%;
     background-color: var(--bg-secundary);
   }
 
+  .btn-cardSer {
+    width: 50%;
+  }
+
   .textH2Card {
-    width: 600PX;
+    width: 100%;
   }
 
   .iconBenefi {
@@ -370,6 +405,32 @@ main {
     padding: 0 12% 0;
     line-height: 3rem;
   }
+
+  .sectionCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .containCardServices{
+    width: 40%;
+  }
+
+  .cardServicces {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn-cardSer {
+    width: 70%;
+  }
+  .cnt-cardServi{
+    height: 100px;
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -402,6 +463,9 @@ main {
   }
 
   .containCardServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 33%;
     background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
@@ -410,19 +474,11 @@ main {
   .sectionCards {
     max-width: 1440px;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch
   }
 
-  .textH2Card {
-    width: 300px;
-  }
-
-  .cardServicces {
-    width: 100%;
-  }
-
-  .textH2Card {
-    width: 100%;
-  }
 
   .containAux {
     margin: 50px 5% 10px;
@@ -437,6 +493,11 @@ main {
   .m-Tablet {
     width: 100%;
   }
+  .cnt-cardServi {
+    width: 80%;
+    justify-content: center;
+}
+
   .slider {
     width: 60vw;
   }
