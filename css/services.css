@@ -37,7 +37,7 @@ main {
 }
 
 .titleSmall {
-    padding-bottom: 10px;
+    padding: 10px 108px;
     text-align: center;
     font-weight: 600;
     letter-spacing: 5px;
@@ -53,8 +53,30 @@ main {
 }
 
 .textH2Info {
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.5;
     color: #ababab;
+    overflow-y: scroll;
+    padding: 5px;
+    max-height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textH2Info::-webkit-scrollbar {
+    width: 5px;
+}
+
+.textH2Info::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.textH2Info::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.textH2Info::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .containCardPro {
@@ -83,6 +105,7 @@ main {
 }
 
 .containInfo {
+    height: auto;
     width: 100%;
     padding: 20px;
 }
@@ -90,9 +113,14 @@ main {
 .titleH2Info,
 .titleH2Ser {
     font-size: 25px;
-    padding-bottom: 14px;
+    padding-bottom: 19px;
     color: var(--whiteGeneral);
     font-weight: 600;
+}
+
+.title-m {
+    font-size: 40px;
+    margin: 50px 0 0;
 }
 
 .containH2Plan {
@@ -291,15 +319,6 @@ main {
         height: 250px;
     }
 
-    .containInfo {
-        height: 310px;
-    }
-
-    .title-m {
-        font-size: 40px;
-        margin: 20px 0;
-    }
-
     .sectionPlan {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -334,10 +353,6 @@ main {
 
     .containCardPro {
         max-width: 100%;
-    }
-
-    .containInfo {
-        height: 292px;
     }
 
     .sectionPlan {
@@ -375,10 +390,6 @@ main {
     .sectionSEO,
     .sectionFrontEnd {
         margin: 1% 10%;
-    }
-
-    .containInfo {
-        height: 248px;
     }
 
     .containCardCall {
