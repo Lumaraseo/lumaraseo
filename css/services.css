@@ -59,22 +59,6 @@ main {
     color: #ababab;
 }
 
-.textH2Info::-webkit-scrollbar {
-    width: 5px;
-}
-
-.textH2Info::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.textH2Info::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-.textH2Info::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 .containCardPro {
     max-width: 80%;
     position: relative;
@@ -159,6 +143,10 @@ main {
 .btn-price-Two:hover {
     background-color: var(--whiteGeneral);
     color: var(--titleSmall);
+}
+
+.containBtnPrice{
+    text-decoration: none;
 }
 
 .btn-price-One {

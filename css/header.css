@@ -64,9 +64,6 @@
     font-weight: bold;
 }
 
-.navList li:hover a {
-    color: var(--titleSmall);
-}
 
 .navList li .underline-text::before {
     content: "";
