@@ -102,7 +102,14 @@ main {
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .titleH1About {
+        font-size: 45px;
+    }
+    .titleNumbers {
+        font-size: 27px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     .sectionBody {
@@ -117,7 +124,6 @@ main {
     .titleH1About {
         padding: 0 23% 40px;
     }
-
     .generalContainer {
         width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
