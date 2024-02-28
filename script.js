@@ -42,7 +42,7 @@ function openTab(tabName, clickedTab) {
   clickedTab.classList.add("active");
 
   // Oculta todos los elementos con clase "tab-content"
-  var tabContents = document.getElementsByClassName("tab-content");
+  const tabContents = document.getElementsByClassName("tab-content");
   for (i = 0; i < tabContents.length; i++) {
     tabContents[i].classList.remove("active");
   }
@@ -56,8 +56,8 @@ function openTab(tabName, clickedTab) {
 
   // Función para activar/desactivar el campo del sitio web
   window.toggleWebsiteInput = function () {
-    var hasWebsite = document.getElementById("hasWebsite").value;
-    var websiteInput = document.getElementById("website");
+    const hasWebsite = document.getElementById("hasWebsite").value;
+    const websiteInput = document.getElementById("website");
 
     if (hasWebsite === "yes") {
       websiteInput.disabled = false;
@@ -103,14 +103,14 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       if (form.checkValidity()) {
-        emailjs.sendForm("service_8qb5y4b","template_iiltbxb", this).then(
+        emailjs.sendForm("service_8qb5y4b", "template_iiltbxb", this).then(
           function () {
             console.log("SUCCESS!");
             // Usar SweetAlert2 para el mensaje de éxito
             Swal.fire({
               icon: "success",
               title: "Success!",
-              text: "Your message has been sent successfully.",              
+              text: "Your message has been sent successfully.",
             });
             form.reset();
             form.classList.remove("was-validated");
@@ -148,8 +148,8 @@ function toggleWebsiteInput() {
     websiteInput.required = false;
     websiteInput.value = "";
   }
-}
+};
 
-document
-  .getElementById("hasWebsite")
-  .addEventListener("change", toggleWebsiteInput);
+document.getElementById("hasWebsite").addEventListener("change", toggleWebsiteInput);
+
+
