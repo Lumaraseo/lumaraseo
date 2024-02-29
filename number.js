@@ -31,3 +31,19 @@ function startCounter() {
 // Start the counter when the page loads or when scrolling down
 window.addEventListener('DOMContentLoaded', startCounter);
 window.addEventListener('scroll', startCounter);
+
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.textH3Team');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(function(el) {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if(elementTop < windowHeight - 100) {
+            el.classList.add('slide-in');
+        }
+    });
+});
+
+
+

@@ -28,7 +28,8 @@ main {
 }
 
 .titleH1About,
-.titleNumbers {
+.titleNumbers,
+.titleH2Team {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -47,6 +48,10 @@ main {
 .titleNumbers {
     font-size: 20px;
     padding: 0 70px;
+}
+
+.sectionCounters {
+    margin-bottom: 70px;
 }
 
 .counter {
@@ -88,6 +93,166 @@ main {
     color: var(--whiteGeneral);
 }
 
+.containimgTeam,
+.containTextH3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titleH2Team {
+    padding: 0 20px 40px;
+}
+
+.imgTeam {
+    height: auto;
+    width: 90%;
+    border-radius: 2rem;
+}
+
+.textH3Team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    height: 4rem;
+    font-size: 20px;
+    font-weight: 300;
+    border: 2px solid var(--titleSmall);
+    margin: 10px 0;
+    border-radius: 2rem;
+    padding: 0 37px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.textH3Team:hover {
+    color: var(--titleSmall);
+    background-color: var(--whiteGeneral);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.textH3Team {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.spiner-container {
+    padding: 25% 0 30px;
+}
+
+.five-lines {
+    margin: 0 auto;
+    position: relative;
+    height: 14vw;
+    width: 14vw;
+    min-height: 300px;
+    min-width: 300px;
+    z-index: 0;
+}
+
+.fade-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.line {
+    border-radius: 30%;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    will-change: auto;
+}
+
+.disciplines .five-lines .line:nth-child(2) {
+    border: 5px solid var(--titleSmall);
+}
+
+.contaAbsolute{
+    margin: 60px 30px;
+    padding: 50px 30px;
+    background-color: var(--bg-secundary);
+    position: relative;
+    line-height: 1.5;
+    border-radius: 1rem;
+}
+.contanRelative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+    font-weight:300;
+    top: -25px;
+    left: 20px;
+    padding: 10px;
+    color: var(--titleSmall);
+    background-color: var(--whiteGeneral);
+    border-radius: 100%;
+}
+
+.spanCard{
+    color: var(--whiteGeneral);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.titleH3Card{
+    color: var(--titleSmall);
+    text-align: center;
+}
+
+@keyframes rotateLine {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.line {
+    animation: rotateLine 5s infinite linear;
+}
+
+
+
 @media screen and (min-width: 768px) {
     main {
         padding-top: 20%;
@@ -100,14 +265,54 @@ main {
     .titleH1About {
         padding: 0 20% 40px;
     }
+
+    .containGeneralTeam {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containimgTeam {
+        width: 60%
+    }
+
+    .containTextH3 {
+        width: 40%;
+    }
+
+    .textH3Team {
+        margin: 5px 0;
+    }
+    .containerGeneralHeart{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .contaAbsolute {
+        height: 220px;
+        max-width: 40%;
+    }
+    .spiner-container {
+        padding: 10% 0 30px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .titleH1About {
         font-size: 45px;
     }
+
     .titleNumbers {
         font-size: 27px;
+    }
+
+    .containimgTeam {
+        width: 50%
+    }
+
+    .containTextH3 {
+        width: 50%;
     }
 }
 
@@ -124,6 +329,7 @@ main {
     .titleH1About {
         padding: 0 23% 40px;
     }
+
     .generalContainer {
         width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
@@ -132,5 +338,9 @@ main {
     .counterDescription {
         padding: 0 0;
         font-size: 16px;
+    }
+
+    .imgTeam {
+        width: 95%;
     }
 }
