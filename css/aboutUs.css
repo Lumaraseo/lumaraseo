@@ -200,14 +200,20 @@ main {
     border: 5px solid var(--titleSmall);
 }
 
-.contaAbsolute{
+.contaAbsolute {
     margin: 60px 30px;
     padding: 50px 30px;
     background-color: var(--bg-secundary);
     position: relative;
     line-height: 1.5;
     border-radius: 1rem;
+    cursor: pointer;
 }
+
+.contaAbsolute:hover {
+    box-shadow: 0px 0px 15px -3px var(--titleSmall);
+}
+
 .contanRelative {
     display: flex;
     align-items: center;
@@ -216,7 +222,7 @@ main {
     width: 55px;
     height: 55px;
     font-size: 35px;
-    font-weight:300;
+    font-weight: 300;
     top: -25px;
     left: 20px;
     padding: 10px;
@@ -225,14 +231,15 @@ main {
     border-radius: 100%;
 }
 
-.spanCard{
+
+.spanCard {
     color: var(--whiteGeneral);
     font-size: 25px;
     font-weight: 500;
 }
 
 
-.titleH3Card{
+.titleH3Card {
     color: var(--titleSmall);
     text-align: center;
 }
@@ -284,15 +291,18 @@ main {
     .textH3Team {
         margin: 5px 0;
     }
-    .containerGeneralHeart{
+
+    .containerGeneralHeart {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
+
     .contaAbsolute {
         height: 220px;
         max-width: 40%;
     }
+
     .spiner-container {
         padding: 10% 0 30px;
     }
@@ -313,6 +323,16 @@ main {
 
     .containTextH3 {
         width: 50%;
+    }
+
+    .contaAbsolute {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 20px;
+        padding: 50px 30px;
+        height: 240px;
+        max-width: 29%;
     }
 }
 
@@ -342,5 +362,12 @@ main {
 
     .imgTeam {
         width: 95%;
+    }
+
+    .contanRelative {
+        width: 70px;
+        height: 70px;
+        font-size: 45px;
+        top: -35px;
     }
 }
