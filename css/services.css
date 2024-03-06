@@ -27,16 +27,7 @@ main {
     color: var(--whiteGeneral);
 }
 
-.sectionSEO,
-.sectionFrontEnd {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.titleSmall {
+.titleSmall{
     padding: 10px 108px;
     text-align: center;
     font-weight: 600;
@@ -52,55 +43,13 @@ main {
     padding: 0 30px 40px;
 }
 
-.textH2Info,
+
+
+
 .textH2Price {
     font-size: 16px;
     line-height: 1.5;
     color: #ababab;
-}
-
-.containCardPro {
-    max-width: 80%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: var(--bg-secundary);
-    border-radius: 0.8rem;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.containImg {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-}
-
-.imgPro {
-    height: auto;
-    width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0;
-    cursor: pointer;
-}
-
-.containInfo {
-    height: auto;
-    width: 100%;
-    padding: 20px;
-}
-
-.titleH2Info,
-.titleH2Ser {
-    font-size: 25px;
-    padding-bottom: 19px;
-    color: var(--whiteGeneral);
-    font-weight: 600;
-}
-
-.title-m {
-    font-size: 40px;
-    margin: 50px 0 0;
 }
 
 .sectoionPrice {
@@ -145,7 +94,7 @@ main {
     color: var(--titleSmall);
 }
 
-.containBtnPrice{
+.containBtnPrice {
     text-decoration: none;
 }
 
@@ -159,6 +108,7 @@ main {
 
 .titlePlan,
 .titleH2price {
+    color: var(--whiteGeneral);
     font-size: 36px;
     font-weight: 700;
     text-align: center;
