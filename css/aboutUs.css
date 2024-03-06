@@ -258,7 +258,45 @@ main {
     animation: rotateLine 5s infinite linear;
 }
 
+.cnt-CardCall {
+    margin: 50px 20px 50px;
+    padding: 40px;
+    background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
+    background-color: var(--bg-secundary);
+    border-radius: 1rem;
+}
 
+.titleSmallCard {
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--titleSmall);
+}
+
+.tittleH2Card {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2.4rem;
+}
+
+.btn-purple {
+    height: 3.5rem;
+    width: 8rem;
+    color: var(--titleSmall);
+    border-style: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0 25px;
+    cursor: pointer;
+}
+
+.btn-purple:hover {
+    color: white;
+    background-color: var(--titleSmall);
+    transition: background-color 0.3s ease;
+}
 
 @media screen and (min-width: 768px) {
     main {
@@ -334,6 +372,13 @@ main {
         height: 240px;
         max-width: 29%;
     }
+
+    .cnt-CardCall {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 40px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -343,7 +388,7 @@ main {
     }
 
     main {
-        padding: 12% 0;
+        padding-top: 12%;
     }
 
     .titleH1About {

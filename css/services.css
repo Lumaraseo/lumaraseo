@@ -27,7 +27,7 @@ main {
     color: var(--whiteGeneral);
 }
 
-.titleSmall{
+.titleSmall {
     padding: 10px 108px;
     text-align: center;
     font-weight: 600;
@@ -188,6 +188,7 @@ main {
     font-weight: 700;
     font-size: 31px;
     line-height: 2.4rem;
+    color: var(--whiteGeneral);
 }
 
 .btn-purpleCall {
@@ -205,6 +206,13 @@ main {
 .btn-purpleCall:hover {
     color: var(--whiteGeneral);
     background-color: var(--titleSmall);
+}
+
+.sectionAccordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -325,10 +333,19 @@ main {
     }
 
     .containCardCall {
+        max-width: 1000px;
+        margin: 50px auto;
         gap: 20px;
+        background: url(../img/elementOne.svg) no-repeat bottom right / 50%;
+        background-color: var(--bg-secundary);
     }
 
     .containPrice {
-        max-width: 64%;
+        max-width: 1000px;
+    }
+
+    .sectionAccordion {
+        max-width: 800px;
+        margin: auto;
     }
 }
