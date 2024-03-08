@@ -255,6 +255,9 @@ main {
         padding: 20px 0;
         border-radius: 1rem;
     }
+    .contacSerA{
+        text-decoration: none;
+    }
 
     .btn-price-Two {
         display: none;
