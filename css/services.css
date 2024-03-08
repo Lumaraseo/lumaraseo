@@ -41,10 +41,8 @@ main {
     text-align: center;
     line-height: 1.3em;
     padding: 0 30px 40px;
+    color: var(--whiteGeneral);
 }
-
-
-
 
 .textH2Price {
     font-size: 16px;
@@ -92,6 +90,37 @@ main {
 .btn-price-Two:hover {
     background-color: var(--whiteGeneral);
     color: var(--titleSmall);
+}
+.containTitleExper{
+    margin-top: 100px;
+}
+
+.wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 35px;
+    background-color: var(--blueDarkGeneral);
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+.containLogoFather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titleLogo {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--whiteGeneral);
+}
+.logo {
+    height: 70px;
 }
 
 .containBtnPrice {
@@ -255,7 +284,8 @@ main {
         padding: 20px 0;
         border-radius: 1rem;
     }
-    .contacSerA{
+
+    .contacSerA {
         text-decoration: none;
     }
 
@@ -293,6 +323,11 @@ main {
         grid-template-rows: repeat(1, 1fr);
         margin: 1%;
 
+    }
+    .wrapper{
+        max-width: 550px;
+        margin: auto;
+        border: 1px solid #ababab;
     }
 
     .containCardPro {

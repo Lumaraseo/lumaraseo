@@ -273,7 +273,7 @@ main {
   gap: 30px;
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite;
-  width: calc(200px * 8);
+  width: calc(150px * 12);
 }
 
 .slider .slide {
@@ -415,7 +415,6 @@ main {
   .containCardServices, .cnt-CardCall{
     background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
-    width: 45%;
   }
 
   .cardServicces {
@@ -506,6 +505,6 @@ main {
     gap: 88px;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 30s linear infinite;
-    width: calc(260px * 10);
+    width: calc(260px * 12);
   }
 }
