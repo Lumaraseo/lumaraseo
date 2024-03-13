@@ -14,6 +14,7 @@
   --hoverAndText: aqua;
   --textGeneral: rgb(2, 2, 51);
   --whiteGeneral: white;
+  --titleSmall: #7844e4;
 }
 
 body {
@@ -99,6 +100,28 @@ li a {
   color: var(--whiteGeneral);
 }
 
+.ulListFooter li a.underline-text-footer {
+  position: relative;
+  text-decoration: none;
+  color: var(--whiteGeneral);
+  transition: color 0.3s;
+}
+
+.ulListFooter li a.underline-text-footer::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--titleSmall);
+  transition: width 0.3s;
+}
+
+.ulListFooter li a.underline-text-footer:hover::after {
+  width: 100%;
+}
+
 .copyRight {
   padding: 10px;
   color: var(--whiteGeneral);
@@ -146,13 +169,14 @@ li a {
   }
 
 }
-@media screen and (min-width: 1440px){
-  .sectionFooter{
+
+@media screen and (min-width: 1440px) {
+  .sectionFooter {
     max-width: 1440px;
     margin: auto;
   }
+
   .containIconFooter {
     width: 10%;
   }
 }
-
