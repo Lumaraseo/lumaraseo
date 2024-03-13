@@ -1,0 +1,38 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-general: #0c0832;
+    --bg-secundary: #19153d;
+    --titleSmall: #7844e4;
+    --colorIconMenu: white;
+    --hoverAndText: aqua;
+    --whiteGeneral: white;
+}
+.containBreadcrumb{
+    width: 100%;
+    padding: 0 0 50px 10px;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #5f5fff;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #999;
+}

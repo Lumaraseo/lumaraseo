@@ -23,7 +23,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40%;
+    padding-top: 22%;
     color: var(--whiteGeneral);
 }
 
@@ -246,7 +246,7 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        padding-top: 20%;
+        padding-top: 11%;
     }
 
     .titleH1Services {
