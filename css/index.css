@@ -413,6 +413,7 @@ main {
   }
 
   .containCardServices, .cnt-CardCall{
+    width: 46%;
     background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
   }
