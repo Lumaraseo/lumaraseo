@@ -412,10 +412,15 @@ main {
     justify-content: center;
   }
 
-  .containCardServices, .cnt-CardCall{
+  .containCardServices,
+  .cnt-CardCall {
     width: 46%;
     background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
+  }
+
+  .cnt-CardCall {
+    width: auto;
   }
 
   .cardServicces {
@@ -429,7 +434,8 @@ main {
   .btn-cardSer {
     width: 70%;
   }
-  .cnt-cardServi{
+
+  .cnt-cardServi {
     height: 100px;
     width: 55%;
   }
@@ -439,7 +445,7 @@ main {
   .sectionBody {
     margin: 0 auto;
     max-width: 1440px;
-}
+  }
 
   main {
     padding-top: 10%;
@@ -493,10 +499,11 @@ main {
   .m-Tablet {
     width: 100%;
   }
+
   .cnt-cardServi {
     width: 80%;
     justify-content: center;
-}
+  }
 
   .slider {
     width: 60vw;
