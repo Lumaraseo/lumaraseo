@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /termsConditions.html
+
+User-agent: *
+Disallow: /termsConditions.html
+
+Sitemap: https://www.lumaraseo.com/termsConditions.html.xml
