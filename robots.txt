@@ -5,4 +5,4 @@ Disallow: /termsConditions.html
 User-agent: *
 Disallow: /termsConditions.html
 
-Sitemap: https://www.lumaraseo.com/termsConditions.html.xml
+Sitemap: https://www.lumaraseo.com/sitemap.xml
