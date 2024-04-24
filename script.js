@@ -55,7 +55,6 @@ function openTab(tabName, clickedTab) {
   if (selectedTabContent) selectedTabContent.classList.add("active");
 }
 
-
 (() => {
   "use strict";
 
@@ -80,49 +79,49 @@ function openTab(tabName, clickedTab) {
 
 // Inicialización de EmailJS con tu publicKey
 
-(function () {
-  emailjs.init("xQxgwXqenHE-4vp6i");
-})();
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
 
-  form.addEventListener(
-    "submit",
-    function (event) {
-      event.preventDefault();
+  if (form) {
+    (function () {
+      emailjs.init("xQxgwXqenHE-4vp6i");
+    })();
 
-      if (form.checkValidity()) {
-        emailjs.sendForm("service_8qb5y4b", "template_iiltbxb", this).then(
-          function () {
-            console.log("SUCCESS!");
-            // Usar SweetAlert2 para el mensaje de éxito
-            Swal.fire({
-              icon: "success",
-              title: "Success!",
-              text: "Your message has been sent successfully.",
-            });
-            form.reset();
-            form.classList.remove("was-validated");
-          },
-          function (error) {
-            console.log("FAILED...", error);
-            // Usar SweetAlert2 para el mensaje de error
-            Swal.fire({
-              icon: "error",
-              title: "Error",
-              text: "The message could not be sent, please try again.",
-            });
-          }
-        );
-      } else {
-        event.stopPropagation();
-      }
+    form.addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
 
-      form.classList.add("was-validated");
-    },
-    false
-  );
+        if (form.checkValidity()) {
+          emailjs.sendForm("service_8qb5y4b", "template_iiltbxb", this).then(
+            function () {
+              console.log("SUCCESS!");
+              Swal.fire({
+                icon: "success",
+                title: "Success!",
+                text: "Your message has been sent successfully.",
+              });
+              form.reset();
+              form.classList.remove("was-validated");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "The message could not be sent, please try again.",
+              });
+            }
+          );
+        } else {
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  }
 });
 
 function toggleWebsiteInput() {
@@ -138,8 +137,10 @@ function toggleWebsiteInput() {
     websiteInput.required = false;
     websiteInput.value = "";
   }
-};
+}
 
-document.getElementById("hasWebsite").addEventListener("change", toggleWebsiteInput);
-
-
+if (document.getElementById("hasWebsite")) {
+  document
+    .getElementById("hasWebsite")
+    .addEventListener("change", toggleWebsiteInput);
+}

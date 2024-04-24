@@ -95,7 +95,7 @@ main {
     margin-top: 100px;
 }
 
-.wrapper {
+.wrapperExp {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -324,7 +324,7 @@ main {
         margin: 1%;
 
     }
-    .wrapper{
+    .wrapperExp{
         max-width: 550px;
         margin: auto;
         border: 1px solid #ababab;
