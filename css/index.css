@@ -450,9 +450,13 @@ main {
     padding-top: 10%;
   }
 
-  .sectionBody {
-    max-width: 1440px;
-  }
+  .titleH1Index {
+    padding: 0 20% 0;
+}
+
+  .imgOne {
+    width: 70%;
+}
 
   .sectionServices {
     margin: 0 5%;
