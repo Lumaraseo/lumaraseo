@@ -260,10 +260,9 @@ main {
 }
 
 .imgSlider {
-  height: auto;
-  width: 30%;
+  aspect-ratio: 3 / 2;
   object-fit: contain;
-  mix-blend-mode: color-burn;
+  width: 100%;
 }
 
 .slider .slide-track {
@@ -273,7 +272,7 @@ main {
   gap: 30px;
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite;
-  width: calc(150px * 12);
+  width: calc(200px * 12);
 }
 
 .slider .slide {
