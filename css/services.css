@@ -200,7 +200,7 @@ main {
 .containCardCall {
     margin: 50px 20px 50px;
     padding: 40px;
-    background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
+    background: url(../img/elementOne.webp) no-repeat bottom right / 90%;
     background-color: var(--bg-secundary);
     border-radius: 1rem;
 }
@@ -374,7 +374,7 @@ main {
         max-width: 1000px;
         margin: 50px auto;
         gap: 20px;
-        background: url(../img/elementOne.svg) no-repeat bottom right / 50%;
+        background: url(../img/elementOne.webp) no-repeat bottom right / 50%;
         background-color: var(--bg-secundary);
     }
 

@@ -147,7 +147,7 @@ main {
 .containCardCont {
     margin: 50px 20px 50px;
     padding: 40px 20px;
-    background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
+    background: url(../img/elementOne.webp) no-repeat bottom right / 90%;
     background-color: var(--bg-secundary);
     border-radius: 1rem;
 }

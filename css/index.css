@@ -152,7 +152,7 @@ main {
 .cnt-CardCall {
   margin: 50px 20px 50px;
   padding: 40px;
-  background: url(../img/elementOne.svg) no-repeat bottom right / 90%;
+  background: url(../img/elementOne.webp) no-repeat bottom right / 90%;
   background-color: var(--bg-secundary);
   border-radius: 1rem;
 }
@@ -347,7 +347,7 @@ main {
 
   .containCardServices,
   .cnt-CardCall {
-    background: url(../img/elementOne.svg) no-repeat bottom right / 50%;
+    background: url(../img/elementOne.webp) no-repeat bottom right / 50%;
     background-color: var(--bg-secundary);
   }
 
@@ -414,7 +414,7 @@ main {
   .containCardServices,
   .cnt-CardCall {
     width: 46%;
-    background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
+    background: url(../img/elementOne.webp) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
   }
 
@@ -476,7 +476,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 33%;
-    background: url(../img/elementOne.svg) no-repeat bottom right / 100%;
+    background: url(../img/elementOne.webp) no-repeat bottom right / 100%;
     background-color: var(--bg-secundary);
   }
 
