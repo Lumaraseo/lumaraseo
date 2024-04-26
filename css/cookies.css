@@ -88,8 +88,13 @@ body {
     margin: 0 10px;
 }
 
-.buttons a {
-    color: var(--Blue-primary);
+.buttons .item2 {
+    border-radius: 5px;
+    color: var(--whiteGeneral);
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--bg-secundary);
+    padding: 10px;
 }
 
 @media screen and (min-width: 768px) {

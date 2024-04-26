@@ -54,6 +54,10 @@ main {
   width: 380px;
 }
 
+.imgTwo {
+  width: 300px;
+}
+
 .textImgOne {
   text-align: center;
   color: var(--whiteGeneral);
@@ -313,6 +317,10 @@ main {
   background-color: var(--whiteGeneral);
 }
 
+.cnt-pp{
+  border-top: 1px solid gray;
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding-top: 20%;
@@ -335,10 +343,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .imgTwo {
-    width: 100%;
   }
 
   .cardServicces {
