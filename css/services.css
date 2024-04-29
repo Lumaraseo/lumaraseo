@@ -122,6 +122,9 @@ main {
 .logo {
     height: 70px;
 }
+.logoSearch{
+    height: 100px;
+}
 
 .containBtnPrice {
     text-decoration: none;
