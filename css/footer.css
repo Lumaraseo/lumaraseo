@@ -134,6 +134,17 @@ li a {
   font-size: 25px;
 }
 
+.hidden-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 @media screen and (min-width: 768px) {
   .containIconFooter {
     width: 25%;

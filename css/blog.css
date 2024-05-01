@@ -1,3 +1,61 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-general: #0c0832;
+    --bg-secundary: #19153d;
+    --titleSmall: #7844e4;
+    --hoverAndText: aqua;
+    --whiteGeneral: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22%;
+    color: var(--whiteGeneral);
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+}
 
 
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: unset;
+}
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+}
 
+.dropdown-menu  {
+    background: rgb(120, 68, 228);
+    background: linear-gradient(180deg,
+            rgba(120, 68, 228, 1) 0%,
+            rgba(25, 21, 61, 1) 100%);
+}
+
+@media screen and (min-width: 1440px) {
+    .sectionBody {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    main {
+        padding-top: 10%;
+    }
+}
