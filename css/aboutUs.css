@@ -127,6 +127,8 @@ main {
     padding: 0 37px;
     line-height: 1.5;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--whiteGeneral);
 }
 
 .textH3Team:hover {
