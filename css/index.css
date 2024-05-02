@@ -55,7 +55,7 @@ main {
 }
 
 .imgTwo {
-  width: 300px;
+  width: 100%;
 }
 
 .textImgOne {
@@ -284,6 +284,7 @@ main {
 }
 
 .slider .slide img {
+  height: auto;
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
@@ -459,7 +460,7 @@ main {
 }
 
   .imgOne {
-    width: 70%;
+    width: 100%;
 }
 
   .sectionServices {

@@ -120,7 +120,8 @@ main {
     color: var(--whiteGeneral);
 }
 .logo {
-    height: 70px;
+    width: 80px;
+    height: 71px;
 }
 .logoSearch{
     height: 100px;
